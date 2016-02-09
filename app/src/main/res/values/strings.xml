@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name">Tetrizz</string>
+    <string name="app_name">Sir Tet</string>
 
 
     <string name="ClassicButton">Klassisches Spiel</string>
     <string name="Tetris">Tetrizz</string>
     <string name="HighscoreButton">HighScore</string>
     <string name="ExitButton">Beenden</string>
-    <string name="Menu">Menu</string>
+    <string name="Menu">Musik</string>
     <string name="pause">Pause</string>
     <string name="left_button">Links</string>
     <string name="right_button">Rechts</string>
     <string name="rotate">Drehen</string>
     <string name="place">Platzieren</string>
     <string name="use_buttons">  Steuerung per Tasten</string>
-    <string name="options">Einstellungen</string>
+    <string name="options">Musik</string>
     <string name="music_on">  Musik an</string>
     <string name="back">Zurück</string>
     <string name="start_button">Start</string>

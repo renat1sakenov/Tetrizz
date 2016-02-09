@@ -31,7 +31,10 @@
         android:textSize="20sp"
         android:text="@string/music_on"
         android:id="@+id/musicradio"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/headline"
+        android:layout_alignLeft="@+id/headline"
+        android:layout_alignStart="@+id/headline" />
     <!--    android:layout_below="@+id/steeringbutton"
         android:layout_alignLeft="@+id/steeringbutton"
         android:layout_alignStart="@+id/steeringbutton"
