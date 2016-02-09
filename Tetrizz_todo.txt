@@ -1,0 +1,60 @@
+	Tetrizz
+
+***********************************************
+
+TODO List:
+	
+	-Upgrades
+	-Events
+	-Pop up Fenster
+	-Level design
+	-Design / Layout
+		-Bitmaps für Blöcke und Knöpfe
+		-Layout vom Bedienfeld
+
+
+
+************************************************
+
+Bugs:
+	-Touch Bedienung funktioniert nicht richtig
+	-Pause funktioniert nicht richtig
+
+
+************************************************
+
+Feature Ideen:
+
+
+	-Combo Modus mit Extras / Flashlights / Farben / Extrapunkte
+
+	-Events :
+		Erdbeben: Blöcke verschieben sich einfach so, alles wackelt
+		Blitz: Hohe "Türme" von Blöcken werden spontan zerstört, tritt aber nur sehr selten auf
+		Party: Runterfallende Blöcke drehen sich im Kreis, von selbst.
+
+
+	-Punktesystem:
+		Im Spiel können Punkte gewonnen werden, durch Highscore, Challanges oder Ähnliches.
+		Mit diesen Punkten kann man in einem Menu bestimmte Fähigkeiten kaufen
+			zB. Zeitlupen Modus:	Das Spiel läuft sehr langsam für 10 Sekunden,
+		    	Füller:		Man kann eine bestimmte Menge an Blöcken selber in die Welt setzen,
+		    	Wahrscheinlichkeiten für bestimmte Events können erhöht werden 
+			usw...
+
+
+	-Levelmodus / Storymodus:
+		Verschiedene Challanges / Missionen
+			zB. Überlebe im Hardcore-Modus für eine Minute
+		    	Schaffe eine X- Combo (X Ebenen auf einmal löschen)
+		    	Platziere 5 X-Blöcke übereinander 
+		usw...
+
+
+	-Verschiedene Designs / Themes:
+		-zusätzliche Bitmaps
+		-Vielleicht so ähnlich wie bei Doodle-Jump
+
+		-Städte / Bomben Theme
+
+	-Soundtrack

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:id="@+id/game_activity_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    >
+</LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="pause"
+            android:textAllCaps="false"
+            />
+
+
+        <TextView
+            android:id="@+id/score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="32sp"
+            android:paddingRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/left_button"
+            android:layout_alignParentLeft="true"
+            android:onClick="goLeft"
+            android:textAllCaps="false"
+             />
+
+         <Button
+             android:id="@+id/right_button"
+             android:layout_width="100dp"
+             android:layout_height="60dp"
+             android:text="@string/right_button"
+             android:layout_alignParentRight="true"
+             android:onClick="goRight"
+             android:textAllCaps="false"
+             />
+
+          <Button
+              android:id="@+id/rotate_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/rotate"
+              android:onClick="rotate"
+
+              android:layout_centerVertical="true"
+              android:layout_alignRight="@+id/place_button"
+              android:layout_alignEnd="@+id/place_button"
+              android:layout_alignLeft="@+id/place_button"
+              android:layout_alignStart="@+id/place_button"
+              android:textAllCaps="false"
+
+              />
+
+            <Button
+                android:id="@+id/place_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place"
+                android:layout_below="@+id/rotate_button"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:onClick="place"
+                android:textAllCaps="false"
+
+
+
+                />
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+

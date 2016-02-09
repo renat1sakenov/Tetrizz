@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    >
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="55sp"
+        android:text="@string/options"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/use_buttons"
+        android:id="@+id/steeringbutton"
+        android:layout_below="@+id/headline"
+         android:layout_alignLeft="@+id/headline"
+        android:layout_alignStart="@+id/headline"
+        android:layout_marginTop="49dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/music_on"
+        android:id="@+id/musicradio"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/steeringbutton"
+        android:layout_alignLeft="@+id/steeringbutton"
+        android:layout_alignStart="@+id/steeringbutton" />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/back_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="back_buttonClick"
+        android:textAllCaps="false"
+        />
+
+
+
+</RelativeLayout>

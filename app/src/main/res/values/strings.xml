@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Tetrizz</string>
+
+
+    <string name="ClassicButton">Klassisches Spiel</string>
+    <string name="Tetris">Tetrizz</string>
+    <string name="HighscoreButton">HighScore</string>
+    <string name="ExitButton">Beenden</string>
+    <string name="Menu">Menu</string>
+    <string name="pause">Pause</string>
+    <string name="left_button">Links</string>
+    <string name="right_button">Rechts</string>
+    <string name="rotate">Drehen</string>
+    <string name="place">Platzieren</string>
+    <string name="use_buttons">  Steuerung per Tasten</string>
+    <string name="options">Einstellungen</string>
+    <string name="music_on">  Musik an</string>
+    <string name="back">Zurück</string>
+    <string name="start_button">Start</string>
+    <string name="no">Nein</string>
+    <string name="yes">In Ordung</string>
+    <string name="LevelButton">Level Modus</string>
+
+
+    <string name="vb">sehr groß</string>
+    <string name="b">groß</string>
+    <string name="d">normal</string>
+    <string name="s">klein</string>
+    <string name="vs">sehr klein</string>
+
+
+</resources>
