@@ -35,10 +35,11 @@
         android:textSize="28sp"
         android:text="@string/ClassicButton"
         android:onClick="playClick"
-        android:background="@drawable/buttonframe1"
-        android:textAllCaps="false"
+        android:textAllCaps="false" />
+       <!-- android:background="@drawable/buttonframe1" -->
 
-        />
+
+
 
 
         <!--
