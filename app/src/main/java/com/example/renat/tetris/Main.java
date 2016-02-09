@@ -43,10 +43,10 @@ public class Main extends Activity {
 
         Button menu = (Button) findViewById(R.id.MenuButton);
         menu.setTypeface(face);
-
+        /*
         Button levelButton = (Button) findViewById(R.id.LevelButton);
         levelButton.setTypeface(face);
-
+        */
         String error = Data.init(getApplicationContext());
         if(!error.isEmpty()) {
             Toast.makeText(this, error, Toast.LENGTH_LONG).show();
@@ -113,11 +113,12 @@ public class Main extends Activity {
         startActivity(intent);
     }
 
+    /*
     public void levelClick(View view){
         Intent intent = new Intent(this, LevelMenu.class);
         startActivity(intent);
     }
-
+    */
     public void openMenu(View view){
         Intent intent = new Intent(this, OptionMenu.class);
         startActivity(intent);
