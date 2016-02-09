@@ -41,48 +41,48 @@
         />
 
 
-        <!--
-            <Button
-                android:id="@+id/LevelButton"
-                android:layout_width="200dp"
-                android:layout_height="90dp"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/PlayButton"
-                android:layout_marginTop="65dp"
-                android:layout_marginLeft="88dp"
-                android:textSize="28sp"
-                android:text="@string/LevelButton"
-                android:onClick="levelClick"
-                android:textAllCaps="false"
 
-                />
-        -->
-            </RelativeLayout>
+    <Button
+        android:id="@+id/LevelButton"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/PlayButton"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="88dp"
+        android:textSize="28sp"
+        android:text="@string/LevelButton"
+        android:onClick="levelClick"
+        android:textAllCaps="false"
 
+        />
 
-            <Button
-                android:id="@+id/MenuButton"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:text="@string/Menu"
-                android:onClick="openMenu"
-                android:layout_below="@+id/relativeLayout"
-                android:layout_centerHorizontal="true"
-                android:textAllCaps="false"
-
-                />
-
-            <Button
-                android:id="@+id/ExitButton"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:text="@string/ExitButton"
-                android:layout_below="@+id/MenuButton"
-                android:layout_centerHorizontal="true"
-                android:onClick="ExitButtonClick"
-                android:textAllCaps="false"
-
-                />
+    </RelativeLayout>
 
 
-        </RelativeLayout>
+    <Button
+        android:id="@+id/MenuButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Menu"
+        android:onClick="openMenu"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+
+        />
+
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ExitButton"
+        android:layout_below="@+id/MenuButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="ExitButtonClick"
+        android:textAllCaps="false"
+
+        />
+
+
+</RelativeLayout>
