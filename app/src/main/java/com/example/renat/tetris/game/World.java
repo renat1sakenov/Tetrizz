@@ -26,9 +26,9 @@ public class World {
 
         Point p;
         if(Game_Activity.LEVEL == 0) {
-            p = WorldSize.getSize(Data.SIZE, Data.USE_BUTTONS);
+            p = WorldSize.getSize(Data.SIZE, true);
         }else{
-            p = WorldSize.getSize(WorldSize.Size.DEFAULT,Data.USE_BUTTONS);
+            p = WorldSize.getSize(WorldSize.Size.DEFAULT, true);
         }
 
         WORLD_HEIGHT = p.x + DRAWING_OFFSET;

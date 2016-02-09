@@ -26,7 +26,6 @@ public  class Data {
 
     public static int HIGHSCORE;
     public static int SECOND_HIGHSCORE;
-    public static boolean USE_BUTTONS;
     public static boolean MUSIC_ON;
     public static WorldSize.Size SIZE;
     public static int CURRENT_LEVEL;
@@ -39,7 +38,6 @@ public  class Data {
             writer = new OutputStreamWriter(con.openFileOutput("data.txt",Context.MODE_PRIVATE));
             writer.write(            HIGHSCORE
                             + "\n" + SECOND_HIGHSCORE
-                            + "\n" + Boolean.toString(USE_BUTTONS)
                             + "\n" + Boolean.toString(MUSIC_ON)
                             + "\n" + SIZE
                             + "\n" + CURRENT_LEVEL
@@ -78,8 +76,6 @@ public  class Data {
 
                 //read options
                 try {
-                    h = bufferedReader.readLine();
-                    USE_BUTTONS = Boolean.parseBoolean(h);
                     h = bufferedReader.readLine();
                     MUSIC_ON = Boolean.parseBoolean(h);
                     h = bufferedReader.readLine();
@@ -130,7 +126,6 @@ public  class Data {
     }
 
     public static void setDefaultOptions(){
-        USE_BUTTONS = false;
         MUSIC_ON = true;
         SIZE = WorldSize.Size.DEFAULT;
     }

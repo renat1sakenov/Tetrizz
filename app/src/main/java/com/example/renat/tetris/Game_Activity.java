@@ -56,9 +56,6 @@ public class Game_Activity extends Activity {
     private TextView score_view;
 
     private View layout_wButtons;
-    private View layout_noButtons;
-
-    private View.OnTouchListener touch_listener = null;
 
     public static int LEVEL = 0;
 
@@ -102,40 +99,14 @@ public class Game_Activity extends Activity {
             SoundHandler.set_default_track();
 
 
-        if(Data.USE_BUTTONS){
-            layout_wButtons = getLayoutInflater().inflate(R.layout.game_activity,null);
-            setContentView(layout_wButtons);
-            SCREEN_RATIO = .7f;
+        layout_wButtons = getLayoutInflater().inflate(R.layout.game_activity,null);
+        setContentView(layout_wButtons);
+        SCREEN_RATIO = .7f;
 
-            init_views_wB();
+        init_views_wB();
 
-            game_view = new GameView(this,wdim.y,wdim.x);
+        game_view = new GameView(this,wdim.y,wdim.x);
 
-
-        }
-
-        if(!Data.USE_BUTTONS) {
-            layout_noButtons = getLayoutInflater().inflate(R.layout.game_activity_nobutton, null);
-            setContentView(layout_noButtons);
-            SCREEN_RATIO = .8f;
-
-
-            init_views_noB();
-
-            game_view = new GameView(this, wdim.y, wdim.x);
-
-            touch_listener = new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    if (event.getAction() == MotionEvent.ACTION_UP)
-                        game_controller.action(event.getX(), event.getY());
-
-                    return true;
-                }
-            };
-
-            game_view.setOnTouchListener(touch_listener);
-        }
 
         relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
         init_blackframe();
@@ -282,30 +253,23 @@ public class Game_Activity extends Activity {
 
             enableButtons(true);
 
-            if(!Data.USE_BUTTONS)
-                game_view.setOnTouchListener(touch_listener);
-
             synchronized (this) {
                 notifyAll();
             }
         }else{
             enableButtons(false);
 
-            if(!Data.USE_BUTTONS)
-                game_view.setOnTouchListener(null);
-
-
         }
         PAUSED = !PAUSED;
     }
 
     private void enableButtons(boolean b){
-        if(Data.USE_BUTTONS) {
+
             right_button.setEnabled(b);
             left_button.setEnabled(b);
             rotate_button.setEnabled(b);
             place_button.setEnabled(b);
-        }
+
 
         if (b){
             pause_button.setText("Pause");

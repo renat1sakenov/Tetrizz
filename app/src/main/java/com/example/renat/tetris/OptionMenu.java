@@ -24,7 +24,7 @@ import java.util.Arrays;
  */
 public class OptionMenu extends Activity {
 
-    private CheckBox steering;
+    //private CheckBox steering;
     private CheckBox music;
 
 
@@ -35,17 +35,17 @@ public class OptionMenu extends Activity {
         setContentView(R.layout.optionmenu);
 
         TextView titel = (TextView) findViewById(R.id.headline);
-        steering = (CheckBox) findViewById(R.id.steeringbutton);
+        //steering = (CheckBox) findViewById(R.id.steeringbutton);
         music = (CheckBox) findViewById(R.id.musicradio);
         Button back = (Button) findViewById(R.id.back_button);
 
         titel.setTypeface(Main.face);
-        steering.setTypeface(Main.face);
+        //steering.setTypeface(Main.face);
         music.setTypeface(Main.face);
         back.setTypeface(Main.face);
 
 
-        steering.setChecked(Data.USE_BUTTONS);
+        //steering.setChecked(Data.USE_BUTTONS);
         music.setChecked(Data.MUSIC_ON);
 
 
@@ -60,7 +60,7 @@ public class OptionMenu extends Activity {
 
         super.onDestroy();
 
-        Data.USE_BUTTONS = steering.isChecked();
+        //Data.USE_BUTTONS = steering.isChecked();
         Data.MUSIC_ON = music.isChecked();
 
     }

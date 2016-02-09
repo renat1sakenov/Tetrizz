@@ -6,7 +6,6 @@ import com.example.renat.tetris.ColorMode;
 import com.example.renat.tetris.Data;
 import com.example.renat.tetris.Game_Activity;
 import com.example.renat.tetris.Popup_Window;
-import com.example.renat.tetris.TouchHandler;
 import com.example.renat.tetris.drawer.ComboDrawer;
 
 import java.util.concurrent.Executors;
@@ -39,7 +38,6 @@ public class GameController extends Thread{
         super();
         this.game = game;
 
-        TouchHandler.init(game.getWindowDim().x);
         ScoreHandler.init();
         Sleeper.init();
         World.init();
@@ -165,7 +163,7 @@ public class GameController extends Thread{
 
     public void action(float x, float y){
         synchronized (block) {
-            TouchHandler.action(x, y, block);
+
         }
     }
 
